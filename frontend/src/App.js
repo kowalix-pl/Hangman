@@ -1,25 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import TestSentence from "./components/TestSentence.js";
+import EditSentence from "./components/EditSentence.js";
+import NewSentence from "./components/NewSentence.js";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router> 
+      <Switch>
+        <Route exact path="/">
+          <div>Home Page</div>
+        </Route>
+        <Route path="/test/:id" children={<TestSentence></TestSentence>}></Route>
+        <Route path="/new"><NewSentence></NewSentence></Route>
+        <Route path="/edit/:id" children={<EditSentence></EditSentence>}></Route>
+        <Route path="*">Unknown Route</Route>
+      </Switch>
+    </Router>
   );
+
 }
 
 export default App;
