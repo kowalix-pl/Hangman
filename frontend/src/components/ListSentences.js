@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {list} from "../actions/index.js";
+import Sentence from "./Sentence.js";
 
 const ListSentences = () => {
     const dispatch=useDispatch();
@@ -9,7 +10,7 @@ const ListSentences = () => {
         dispatch(list())
     },[])
     return (<div>{state.sentences.map((sentence)=>{
-        return <div key={sentence.id}>{sentence.text}</div>
+        return <Sentence key={sentence.id}  {...sentence}></Sentence>
     })}</div>)
 };
 
