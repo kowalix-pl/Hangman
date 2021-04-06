@@ -44,3 +44,272 @@ Processing by SentencesController#index as */*
 Completed 200 OK in 14ms (Views: 6.4ms | ActiveRecord: 1.0ms | Allocations: 6243)
 
 
+Started GET "/sentences" for ::1 at 2021-04-06 18:58:59 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 9.8ms | ActiveRecord: 1.0ms | Allocations: 6259)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 18:59:06 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:05:38 +0100
+Processing by SentencesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.5ms | Allocations: 1499)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:06:15 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:07:02 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:07:12 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:11:06 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.1ms | Allocations: 923)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:13:15 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.2ms | Allocations: 906)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:13:19 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:13:22 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:15:21 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:15:26 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:15:39 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:16:02 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:16:06 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:16:10 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:16:14 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:17:53 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:17:58 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:18:00 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.1ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:22:16 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:25:56 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.1ms | Allocations: 905)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:35:12 +0100
+Processing by SentencesController#index as */*
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.4ms | Allocations: 1480)
+
+
+Started POST "/sentences" for ::1 at 2021-04-06 19:35:18 +0100
+Processing by SentencesController#create as */*
+  Parameters: {"sentence"=>{"text"=>"sDs"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mSentence Create (0.7ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "sDs"], ["created_at", "2021-04-06 18:35:18.155718"], ["updated_at", "2021-04-06 18:35:18.155718"]]
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+Completed 201 Created in 9ms (Views: 0.6ms | ActiveRecord: 2.4ms | Allocations: 1976)
+
+
+Started POST "/sentences" for ::1 at 2021-04-06 19:35:19 +0100
+Processing by SentencesController#create as */*
+  Parameters: {"sentence"=>{"text"=>"sDs"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mSentence Create (0.4ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "sDs"], ["created_at", "2021-04-06 18:35:19.669457"], ["updated_at", "2021-04-06 18:35:19.669457"]]
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 1.4ms | Allocations: 1719)
+
+
+Started POST "/sentences" for ::1 at 2021-04-06 19:35:20 +0100
+Processing by SentencesController#create as */*
+  Parameters: {"sentence"=>{"text"=>"sDs"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mSentence Create (0.4ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "sDs"], ["created_at", "2021-04-06 18:35:20.193881"], ["updated_at", "2021-04-06 18:35:20.193881"]]
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+Completed 201 Created in 7ms (Views: 1.0ms | ActiveRecord: 1.4ms | Allocations: 1719)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:35:28 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1224)
+
+
+Started GET "/sentences" for ::1 at 2021-04-06 19:35:38 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 1224)
+
+
+Started GET "/sentences" for ::1 at 2021-04-07 18:06:22 +0100
+Processing by SentencesController#index as */*
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 31ms (Views: 26.9ms | ActiveRecord: 2.7ms | Allocations: 1801)
+
+
+Started POST "/sentences" for ::1 at 2021-04-07 18:06:32 +0100
+Processing by SentencesController#create as */*
+  Parameters: {"sentence"=>{"text"=>"asdlfjksa"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mSentence Create (0.9ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "asdlfjksa"], ["created_at", "2021-04-07 17:06:32.959603"], ["updated_at", "2021-04-07 17:06:32.959603"]]
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+Completed 201 Created in 10ms (Views: 1.0ms | ActiveRecord: 1.7ms | Allocations: 1716)
+
+
+Started POST "/sentences" for ::1 at 2021-04-07 18:06:34 +0100
+Processing by SentencesController#create as */*
+  Parameters: {"sentence"=>{"text"=>"asdlfjksa"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mSentence Create (0.4ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "asdlfjksa"], ["created_at", "2021-04-07 17:06:34.090412"], ["updated_at", "2021-04-07 17:06:34.090412"]]
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+Completed 201 Created in 32ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 1717)
+
+
+Started POST "/sentences" for ::1 at 2021-04-07 18:06:34 +0100
+Processing by SentencesController#create as */*
+  Parameters: {"sentence"=>{"text"=>"asdlfjksa"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mSentence Create (0.4ms)[0m  [1m[32mINSERT INTO "sentences" ("text", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["text", "asdlfjksa"], ["created_at", "2021-04-07 17:06:34.437744"], ["updated_at", "2021-04-07 17:06:34.437744"]]
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/sentences_controller.rb:20:in `create'
+Completed 201 Created in 5ms (Views: 1.1ms | ActiveRecord: 1.4ms | Allocations: 1719)
+
+
+Started GET "/sentences" for ::1 at 2021-04-07 18:06:39 +0100
+Processing by SentencesController#index as */*
+  [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences"[0m
+  ↳ app/controllers/sentences_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 1542)
+
+
