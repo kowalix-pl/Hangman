@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 
 const EditSentence = () => {
     const {id}=useParams()
-    const sentences=useSelector(state=>state.sentences)
+    const sentences=useSelector(state=>state.sentences);
     const currentSentence=sentences.find(sentence=>sentence.id==id);
     const refContainer=useRef(null);
     const dispatch=useDispatch();
