@@ -13,7 +13,6 @@ const Sentence=(sentence)=>{
         <Link className="link" to={'/edit/'+sentence.id}>Edit</Link>
         <Link className="link" to={'/test/'+sentence.id}>Test</Link>
         <button className="link" onClick={()=>handleDelete(sentence.id)}>Delete</button>
-
     </div>
     )
 };

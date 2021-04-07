@@ -6,6 +6,8 @@ const defaultReducer = (state=initState,action) =>{
             return {...state,sentences:action.payload,redirectTo: null};
         case "CREATE":
             return {...state,redirectTo: "/"}
+        case "UPDATE":
+            return {...state,redirectTo: "/"}
         case "DELETE":
             const newSentences=state.sentences.filter((sentence)=>sentence.id!=action.payload)
             return {...state,sentences:newSentences,redirectTo:null}

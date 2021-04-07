@@ -31,3 +31,16 @@ export const remove=(id)=>{
         return dispatch({type:"DELETE",payload:id})
     }
 };
+
+export const update=(id,text)=>{
+
+    return async (dispatch, getState)=>{
+        const response=await fetch("http://localhost:3001/sentences/"+id,{
+            method: "PATCH",
+            headers: {"Content-Type":"application/json"},
+            body: JSON.stringify({sentence:{text}})
+        });
+        const data=await response.json();
+        return dispatch({type:"UPDATE",payload:data})
+    }
+};
