@@ -4,7 +4,10 @@ import {Link} from 'react-router-dom';
 
 const Game= ({text}) => { 
     const [hasWon,setHasWon]= useState(false);
+    const [mistakes,setMistakes]=useState(0);
+    const MAX_MISTAKES=7;
     const hiddenLetters=new Set();
+    const removeListener=()=>{window.removeEventListener("keyup",handleKeyPress)}
     const handleKeyPress=(e)=>{
         if ((e.key.length==1) && (e.key!=" ")){
             const newLetter=e.key.toLowerCase();
@@ -17,16 +20,21 @@ const Game= ({text}) => {
                     return part;
                 }))  
                 if (hiddenLetters.size==0){
+                    removeListener();
                     setHasWon(true);
-                    console.log("You Won")
                 }  
-            } 
+            } else {
+                setMistakes((mistakes)=>{
+                    if ((mistakes+1)>=MAX_MISTAKES) removeListener();
+                    return  mistakes+1
+                });
+            }  
         }
     }
 
     useEffect(()=>{
         window.addEventListener("keyup",handleKeyPress)
-        return ()=>{window.removeEventListener("keyup",handleKeyPress)}
+        return removeListener;
     },[])
     const [parts,setParts]=useState(text.split("").map(letter=>{
         if (isLetter(letter)) hiddenLetters.add(letter.toLowerCase())
@@ -40,8 +48,12 @@ const Game= ({text}) => {
              })}
           </div>
          <br></br>
-         {hasWon && <div className="win">
-             <h1>Congratulations you won!</h1>
+         {hasWon && <div className="end win">
+             <h1>Congratulations you won! :)</h1>
+             <Link to="/">Go back</Link>
+         </div>}
+         {(mistakes>=MAX_MISTAKES) && <div className="end lose">
+             <h1>Sorry you lost! :(</h1>
              <Link to="/">Go back</Link>
          </div>}
        </div>
