@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import isLetter from '../util/isLetter';
 import {Link} from 'react-router-dom';
+import Hangman from './Hangman';
 
 const Game= ({text}) => { 
     const [hasWon,setHasWon]= useState(false);
@@ -42,6 +43,7 @@ const Game= ({text}) => {
     }))
     return (
        <div className="test">
+         <Hangman mistakes={mistakes}></Hangman>
          <div className="letterWrapper">{
              parts.map((part,index)=>{
                return <span key={index} className="letter">{part.visible ? part.letter : ""}</span>
