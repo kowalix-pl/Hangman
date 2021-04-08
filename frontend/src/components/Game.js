@@ -1,9 +1,8 @@
-import {useParams} from "react-router-dom";
-import {useSelector} from "react-redux";
 import { useEffect, useState } from "react";
 import isLetter from '../util/isLetter';
+import {Link} from 'react-router-dom';
 
-const Game= (text) => { 
+const Game= ({text}) => { 
     const hiddenLetters=new Set();
     const handleKeyPress=(e)=>{
         if ((e.key.length==1) && (e.key!=" ")){
@@ -17,13 +16,13 @@ const Game= (text) => {
                     return part;
                 }))  
                 if (hiddenLetters.size==0){
-                    console.log("You Win!")
+                    console.log("You Won!")
                 }  
             } 
         }
     }
 
-useEffect(()=>{
+    useEffect(()=>{
         window.addEventListener("keyup",handleKeyPress)
         return ()=>{window.removeEventListener("keyup",handleKeyPress)}
     },[])
@@ -33,9 +32,16 @@ useEffect(()=>{
     }))
     return (
        <div className="test">
-         {parts.map((part,index)=>{
-             return <div key={index} className="letter">{part.visible ? part.letter : ""}</div>
-         })}
+         <div className="letterWrapper">{
+             parts.map((part,index)=>{
+               return <span key={index} className="letter">{part.visible ? part.letter : ""}</span>
+             })}
+          </div>
+         <br></br>
+         <div className="win">
+             <h1>Congratulations you won!</h1>
+             <Link to="/">Go back</Link>
+         </div>
        </div>
        )
 };

@@ -7,7 +7,6 @@ const TestSentence  = () => {
     const sentences=useSelector(state=>state.sentences);
     const currentSentence=sentences.find(sentence=>sentence.id==id);
     const text=currentSentence.text;
-    
     return <Game text={text}></Game>
 };
 
