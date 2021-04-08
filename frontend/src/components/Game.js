@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import isLetter from '../util/isLetter';
 import {Link} from 'react-router-dom';
 import Hangman from './Hangman';
+import WinScreen from './WinScreen';
+import LoseScreen from './LoseScreen';
 
 const Game= ({text}) => { 
     const [hasWon,setHasWon]= useState(false);
@@ -50,14 +52,8 @@ const Game= ({text}) => {
              })}
           </div>
          <br></br>
-         {hasWon && <div className="end win">
-             <h1>Congratulations you won! :)</h1>
-             <Link to="/">Go back</Link>
-         </div>}
-         {(mistakes>=MAX_MISTAKES) && <div className="end lose">
-             <h1>Sorry you lost! :(</h1>
-             <Link to="/">Go back</Link>
-         </div>}
+         {hasWon && <WinScreen></WinScreen>}
+         {(mistakes>=MAX_MISTAKES) && <LoseScreen></LoseScreen>}
        </div>
        )
 };

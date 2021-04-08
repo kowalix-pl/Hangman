@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
-import {Link} from 'react-router-dom';
 import {remove} from '../actions/index.js';
 import MaskedSentence from './MaskedSentence';
+import SentenceActions from './SentenceActions.js';
 
 const Sentence=(sentence)=>{
     const dispatch=useDispatch();
@@ -11,9 +11,7 @@ const Sentence=(sentence)=>{
     return (
     <div className="sentence">
         <h3><MaskedSentence text={sentence.text}></MaskedSentence></h3>
-        <Link className="link" to={'/edit/'+sentence.id}>Edit</Link>
-        <Link className="link" to={'/test/'+sentence.id}>Test</Link>
-        <button className="link" onClick={()=>handleDelete(sentence.id)}>Delete</button>
+        <SentenceActions id={sentence.id} handleDelete={handleDelete}></SentenceActions>
     </div>
     )
 };
