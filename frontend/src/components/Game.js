@@ -3,6 +3,7 @@ import isLetter from '../util/isLetter';
 import {Link} from 'react-router-dom';
 
 const Game= ({text}) => { 
+    const [hasWon,setHasWon]= useState(false);
     const hiddenLetters=new Set();
     const handleKeyPress=(e)=>{
         if ((e.key.length==1) && (e.key!=" ")){
@@ -16,7 +17,8 @@ const Game= ({text}) => {
                     return part;
                 }))  
                 if (hiddenLetters.size==0){
-                    console.log("You Won!")
+                    setHasWon(true);
+                    console.log("You Won")
                 }  
             } 
         }
@@ -27,7 +29,7 @@ const Game= ({text}) => {
         return ()=>{window.removeEventListener("keyup",handleKeyPress)}
     },[])
     const [parts,setParts]=useState(text.split("").map(letter=>{
-        if (letter!=" ") hiddenLetters.add(letter.toLowerCase())
+        if (isLetter(letter)) hiddenLetters.add(letter.toLowerCase())
         return {letter:letter,visible:!isLetter(letter)}
     }))
     return (
@@ -38,10 +40,10 @@ const Game= ({text}) => {
              })}
           </div>
          <br></br>
-         <div className="win">
+         {hasWon && <div className="win">
              <h1>Congratulations you won!</h1>
              <Link to="/">Go back</Link>
-         </div>
+         </div>}
        </div>
        )
 };
