@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import {useSelector} from "react-redux";
 import { useEffect, useState } from "react";
+import isLetter from '../util/isLetter';
 
 const TestSentence  = () => {
     const {id}=useParams()
@@ -33,7 +34,7 @@ useEffect(()=>{
     },[])
     const [parts,setParts]=useState(text.split("").map(letter=>{
         if (letter!=" ") hiddenLetters.add(letter.toLowerCase())
-        return {letter:letter,visible:false}
+        return {letter:letter,visible:!isLetter(letter)}
     }))
     return (
        <div className="test">
