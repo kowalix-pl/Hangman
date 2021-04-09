@@ -37,6 +37,18 @@ code {
   margin-top: 1rem;
 }
 
+.letter-space{
+
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  font-size: 2rem;
+  vertical-align: middle;
+  margin-top: 1rem;
+}
+
 .end {
   width: 100%;
 }

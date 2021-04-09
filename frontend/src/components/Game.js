@@ -48,7 +48,7 @@ const Game= ({text}) => {
          <Hangman mistakes={mistakes}></Hangman>
          <div className="letterWrapper">{
              parts.map((part,index)=>{
-               return <span key={index} className="letter">{part.visible ? part.letter : ""}</span>
+               return <span key={index} className={(part.letter===" ") ? "letter-space" : "letter"}>{part.visible ? part.letter : ""}</span>
              })}
           </div>
          <br></br>
