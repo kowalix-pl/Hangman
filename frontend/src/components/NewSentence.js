@@ -10,7 +10,7 @@ const NewSentence = () => {
           dispatch(create(refContainer.current.value))
     }
     return (
-     <div>
+     <div className="form">
          <label htmlFor="newSentence"> New Sentence:</label>
          <input type="text" id="newSentence" ref={refContainer}></input>
          <button onClick={handleClick} type="button">Create</button>

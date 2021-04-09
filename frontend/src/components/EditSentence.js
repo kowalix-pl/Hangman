@@ -13,8 +13,8 @@ const EditSentence = () => {
         dispatch(update(id,refContainer.current.value))
     }
     return (
-     <div>
-         <label htmlFor="editSentence"> Edit Sentence:</label>
+     <div className="form">
+         <label htmlFor="editSentence">Edit Sentence:</label>
          <input type="text" id="editSentence" ref={refContainer} defaultValue={currentSentence.text}></input>
          <button onClick={handleClick} type="button">Update</button>
      </div>

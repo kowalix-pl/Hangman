@@ -11,10 +11,12 @@ const App = () => {
   return (
     <Router> 
       {redirectTo && <Redirect to={redirectTo}></Redirect>}
-      <nav>
+      <h1 className="gameTitle">* Hangman Game *</h1>
+       <nav>
         <Link to="/">List</Link><br/>
         <Link to="/new">New Sentence</Link><br/>
-      </nav>
+       </nav>
+    
       <Switch>
         <Route exact path="/">
           <ListSentences></ListSentences>
