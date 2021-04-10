@@ -19,12 +19,9 @@ Install all necessary gems using the command:
 Migrate the database using the command:
 `rails db:migrate RAILS_ENV=development`
 
-Seed the database using the command:
-`rake db:seed`
-
 ### Inside `frontend` directory:
 
-run `npm install`
+`npm install`
 
 ## Running  Guide:
 
